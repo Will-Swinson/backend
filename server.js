@@ -8,7 +8,10 @@ dotenv.config(); // load environment variables from .env file
 const app = express();
 
 // Create a new PostgreSQL client
-const sql = postgres("postgres://wswinson:Swinson1!@127.0.0.1:5432/portfolio");
+// Local URL ==> postgres://wswinson:Swinson1!@127.0.0.1:5432/portfolio
+const sql = postgres(
+  "postgres://db_3d_portfolio_database_user:ectIrHXtoTsuCDx64vu0k4boyQShs4gj@dpg-chbtp3qk728tp98cspd0-a/db_3d_portfolio_database?ssl=true"
+);
 
 // CORS Fix
 app.use(cors());
