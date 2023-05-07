@@ -19,6 +19,7 @@ app.use(cors());
 // Define a route that retrieves data from the database
 app.get("/projects", async (req, res) => {
   try {
+    console.log("Fetching...");
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
     res.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -48,6 +49,7 @@ app.get("/projects", async (req, res) => {
 `;
 
     console.log(data);
+
     res.json(data);
   } catch (error) {
     console.error(error);
