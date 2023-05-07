@@ -52,7 +52,7 @@ app.get("/projects", async (req, res) => {
 
     res.json(data);
   } catch (error) {
-    console.error(error);
+    console.error(error, "This is an error to check issues");
     res.sendStatus(500);
   }
 });
@@ -89,7 +89,7 @@ app.get("/youtube", async (req, res) => {
     console.log(data);
     res.json(data);
   } catch (error) {
-    console.error(error);
+    console.error(error, "This is an error to check issues");
     res.sendStatus(500);
   }
 });
