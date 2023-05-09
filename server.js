@@ -10,7 +10,7 @@ const app = express();
 // Create a new PostgreSQL client
 // Local URL ==> postgres://wswinson:Swinson1!@127.0.0.1:5432/portfolio
 const sql = postgres(
-  "postgres://db_3d_portfolio_database_user:ectIrHXtoTsuCDx64vu0k4boyQShs4gj@dpg-chbtp3qk728tp98cspd0-a/db_3d_portfolio_database?ssl=true"
+  "postgres://db_3d_portfolio_database_user:ectIrHXtoTsuCDx64vu0k4boyQShs4gj@dpg-chbtp3qk728tp98cspd0-a.oregon-postgres.render.com/db_3d_portfolio_database?ssl=true"
 );
 
 // CORS Fix
